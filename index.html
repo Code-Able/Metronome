@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Metronome</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+
+    <div class="container">
+        <div class="metronome">
+<h1>Metronome</h1>
+            <div class="bpm-display">
+                <span class="tempo">160</span>
+                <span class="bpm-text">BPM</span>     
+            </div>
+            <div class="tempo-text">Nice & Steady</div>  
+
+
+            <div class="tempo-settings">
+                <div class="adjust-tempo decrease-tempo">-</div>
+                <input type="range" min="20" max="300" step="1" class="slider">
+                <div class="adjust-tempo increase-tempo">+</div>
+            </div>    
+
+
+            <div class="start-stop">START</div>  
+
+
+            <div class="stepper-control">
+                <div class="stepper stepper-decrease">-</div>
+                <div class="stepper-count">4</div>
+                <div class="stepper stepper-increase">+</div>
+            </div>  
+
+            <span class="beats-per-measure-text">Beats Per Measure</span>
+
+        </div>
+    </div>
+
+
+
+
+    <script src="script.js" type="module"></script>
+  </body>
+</html>

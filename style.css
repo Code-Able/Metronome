@@ -1,0 +1,178 @@
+/* import google font */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+/* Begin Stylest*/
+
+body {
+    font-family: 'Raleway', sans-serif;
+    color: #525252;
+    user-select: none;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+h1 {
+    width:100%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 80px;
+}
+
+.metronome{
+    width: 450px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bpm-display{
+    width: 100%;
+    text-align: center;
+    color: #5f54fa;
+    font-weight: bold;
+}
+
+.bpm-display .tempo {
+    font-size: 4em;
+    font-weight: bold;
+}
+
+.tempo-text {
+    font-size: .8em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.tempo-settings {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tempo-settings .adjust-tempo {
+    height: 30px;
+    width: 30px;
+    font-size: 40px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.tempo-settings .adjust-tempo:hover {
+    background-color: #fa545c;
+    color: #fff;
+}
+
+.tempo-settings .decrease-tempo {
+    line-height: 25px;
+}
+
+.tempo-settings .increase-tempo {
+    line-height: 25px;
+}
+
+
+
+
+input[type=range]{
+    -webkit-appearance: none;
+    background: transparent;
+    width: 70%;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+     -webkit-appearance: none;
+     width: 16px;
+     height: 16px;
+     border-radius: 50%;
+     background-color: #5f54fa;
+     margin-top: -8px;
+}
+
+input[type=range]::-moz-range-thumb {
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #5f54fa;
+    border: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 1px;
+    background-color: #ddd;
+}
+
+input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 1px;
+    background-color: #ddd;
+}
+
+
+
+
+.start-stop {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 0.7em;
+    text-align: center;
+    background-color: #fa545c;
+    color: #fff;
+    line-height: 50px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.start-stop:hover {
+    background-color: #ff656c;
+}
+
+.stepper-control{
+    display: flex;
+    justify-content: center;
+}
+
+.stepper-control .stepper {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    text-align: center;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.stepper-control .stepper:hover{
+    background-color: #ff656c;
+    color: white;
+}
+
+.stepper-control .stepper-increase {
+    line-height: 20px;;
+}
+
+.beats-per-measure-text {
+    text-align: center;
+    font-size: 0.5em;
+    text-transform: uppercase;
+}
